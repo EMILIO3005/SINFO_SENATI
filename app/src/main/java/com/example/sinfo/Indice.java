@@ -12,10 +12,11 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Indice extends AppCompatActivity {
 
-    Button btnIrListado, btnIrBuscador, btnIrRegistro;
+    Button btnIrListado, btnIrListadoB, btnIrBuscador, btnIrRegistro;
 
     private void loadUi(){
         btnIrListado = findViewById(R.id.btnIrListado);
+        btnIrListadoB = findViewById(R.id.btnIrListadoD);
         btnIrBuscador = findViewById(R.id.btnIrBuscador);
         btnIrRegistro = findViewById(R.id.btnIrRegistro);
     }
@@ -35,6 +36,7 @@ public class Indice extends AppCompatActivity {
         loadUi();
 
         btnIrListado.setOnClickListener(v ->{openActivity(Listado.class);});
+        btnIrListadoB.setOnClickListener(v ->{openActivity(ListaDetallada.class);});
         btnIrBuscador.setOnClickListener(v -> {openActivity(Buscador.class);});
         btnIrRegistro.setOnClickListener(v -> {openActivity(Registro.class);});
 

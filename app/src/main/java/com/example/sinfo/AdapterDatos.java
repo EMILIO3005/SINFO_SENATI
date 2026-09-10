@@ -10,13 +10,14 @@ import java.util.ArrayList;
 public class AdapterDatos extends RecyclerView.Adapter<AdapterDatos.ViewHolderDatos>{
     ArrayList<String> listDatos;
 
-    public AdapterDatos(ArrayList<String> listDatos) {
-        this.listDatos = listDatos;
+    public AdapterDatos(ArrayList<String> listEntrada) {
+        this.listDatos = listEntrada;
     }
 
     @NonNull
     @Override
     public ViewHolderDatos onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        //Estamos indicando al ReciclerView Cual es el xml que servira como plantilla
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_list, null, false);
         return new ViewHolderDatos(view);
     }
@@ -32,15 +33,21 @@ public class AdapterDatos extends RecyclerView.Adapter<AdapterDatos.ViewHolderDa
     }
 
     public class ViewHolderDatos extends RecyclerView.ViewHolder {
-        TextView dato;
+
+        //Estos TextView forman parte de la plantillla (item_list.xml)
+        TextView txtApeNom, txtDireccion,txtTelefono;
 
         public ViewHolderDatos(@NonNull View itemView) {
             super(itemView);
-            dato = itemView.findViewById(R.id.txtNombre);
+
+            //Proceso similar al loadUI()
+            txtApeNom = itemView.findViewById(R.id.txtApeNom);
+            txtDireccion = itemView.findViewById(R.id.txtDireccion);
+            txtTelefono = itemView.findViewById(R.id.txtTelefono);
         }
 
-        public void asignarDatos(String s) {
-            dato.setText(s);
+        public void asignarDatos(String dato) {
+            txtApeNom.setText(dato);
         }
 
     }
