@@ -6,6 +6,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="20sp"
+    android:background="@drawable/fondo_degradado"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Indice">
@@ -13,21 +14,29 @@
     <Button
         android:id="@+id/btnIrListado"
         android:text="Lista Simple"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#333333"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/btnIrListadoD"
         android:text="Lista Detallada"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#333333"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/btnIrBuscador"
         android:text="Buscador"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#333333"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/btnIrRegistro"
         android:text="Registro"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#333333"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

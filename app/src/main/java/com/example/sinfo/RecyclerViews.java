@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class RecyclerViews extends AppCompatActivity {
 
-    ArrayList<String> listaPersona = new ArrayList<>();
+    ArrayList<Alumno> listaPersona = new ArrayList<>();
     RecyclerView recyclerPersonas;
 
 

@@ -31,7 +31,7 @@ public class Buscador extends AppCompatActivity {
     Button btnBuscar, btnEliminar, btnActualizar, btnReiniciar;
     RequestQueue requestQueue;
 
-    private final String URL = "http://192.168.101.25:3000/alumnos";
+    private final String URL = "http://192.168.1.72:3000/alumnos";
 
 
 

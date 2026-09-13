@@ -43,7 +43,7 @@ public class ListaDetallada extends AppCompatActivity {
 
 
     //Enpoind del WS
-    private final String URL = "http://192.168.101.25:3000/alumnos";
+    private final String URL = "http://192.168.1.72:3000/alumnos";
 
     private void loadUI(){ recyclerPersonas = findViewById(R.id.recyclerPersonas);}
 
@@ -101,7 +101,7 @@ public class ListaDetallada extends AppCompatActivity {
 
         //Configuraciones generales
         recyclerPersonas.setLayoutManager(new LinearLayoutManager(this));
-        adapterDatos = new AdapterDatos(listaAlumnos);
+        adapterDatos = new AdapterDatos(lstAlumno);
         recyclerPersonas.setAdapter(adapterDatos);
 
     }
